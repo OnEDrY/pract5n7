@@ -36,7 +36,7 @@ public class Main {
         if ((n % r == 0) &&(r != 0)){
 
             if (r == 1) return r;
-            else if (Pr(r) == true) System.out.println(r);
+            else if (Pr(r) == true) System.out.print(r + " ");
             else return Per(n, r-1);
 
         }
@@ -44,6 +44,8 @@ public class Main {
         return Per(n, r-1);
 
     }
+
+
 
     static int L(int u){ return Per(u,u); }
 
@@ -54,7 +56,7 @@ public class Main {
 
         int k = in.nextInt();
 
-        System.out.println(L(k));
+        System.out.print(L(k));
 
     }
 }
